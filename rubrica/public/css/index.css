@@ -1,0 +1,308 @@
+
+@font-face {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Raleway"), local("Raleway-Regular"), url('yqiaad56cjx1aoomtsghgfy6323mhuzfjmgtvxag2ie.woff2') format("woff2");
+	unicode-range: U+100-24F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Raleway"), local("Raleway-Regular"), url('0dtepzklwcef7z0kojax1a.woff2') format("woff2");
+	unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* ::::: https://fonts.googleapis.com/css?family=Oswald ::::: */
+
+@font-face {
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Oswald Regular"), local("Oswald-Regular"), url('dgbpgayycijfa8v2hnt7mfeszw2xoq-xsnqo47m55da.woff2') format("woff2");
+	unicode-range: U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+@font-face {
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Oswald Regular"), local("Oswald-Regular"), url('perd8sj511qe2lhtk-qfcpeszw2xoq-xsnqo47m55da.woff2') format("woff2");
+	unicode-range: U+102-103, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Oswald Regular"), local("Oswald-Regular"), url('yg0glppxxuisnkuejcx4qfeszw2xoq-xsnqo47m55da.woff2') format("woff2");
+	unicode-range: U+100-24F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Oswald Regular"), local("Oswald-Regular"), url('peobiv_ll25tkbpqvi_a2w.woff2') format("woff2");
+	unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* ::::: https://fonts.googleapis.com/?family=Open+Sans ::::: */
+
+html, body {
+   margin: auto;
+   padding: 0px;
+   height: 100%;
+   width: 100%;
+ }
+
+header {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 76px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+header a{
+	color: white;
+	font-size: 130%;
+	font-style: italic;
+}
+
+ul {
+  list-style: outside none none;
+}
+
+li {
+	display: inline-block;
+  float: left;
+  padding: 10px;
+	text-decoration-color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+ }
+
+#logo {
+  margin: 20px;
+  float: left;
+  width: 200px;
+  height: 50px;
+  display: block;
+}
+
+nav {
+  float: right;
+  padding: 20px;
+  font-family: "Open sans",sans-serif;
+}
+
+#menu-icon {
+  background: transparent url('004-bars.png') repeat scroll 0% 0%;
+  width: 32px;
+  height: 32px;
+ }
+
+.intro {
+  width: 100%;
+  margin: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${tg.url('/img/image1.jpg'});
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: table;
+  top: 0px;
+}
+
+.intro .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.content h1 {
+  font-family: "Raleway",sans-serif;
+  color: rgb(249, 243, 244);
+  text-shadow: 0px 0px 300px rgb(0, 0, 0);
+  font-size: 500%;
+}
+
+.intro h2{
+  color: white;
+}
+.intro .btn {
+  border-radius: 9px;
+  font-family: "Oswald",sans-serif;
+  color: white;
+  font-size: 135%;
+  background-color: rgb(3, 106, 129);
+  padding: 10px 20px;
+  border: 3px solid rgb(3, 106, 129);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
+}
+
+p {
+  font-size: 160%;
+  line-height: 210%;
+  text-align: justify;
+  margin: 3%;
+  font-family: sans-serif;
+ }
+
+.copy {
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 20px;
+}
+
+h3::after {
+  width: 100px;
+  height: 2px;
+  background-color: rgb(230, 126, 34);
+  display: block;
+  content: " ";
+  margin: 30px auto 0px;
+}
+
+.features{
+  background-color: black;
+}
+
+.features h3 {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+
+.work {
+  text-align: center;
+  font-family: sans-serif;
+  padding-bottom: 5%;
+
+}
+
+
+.work img {
+  color: white;
+  display: block;
+  margin: 10% auto 0px;
+}
+
+.process {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/carbon0.jpg');
+  margin-bottom: 100px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.process h3 {
+  color: white;
+}
+
+.process .btn1 {
+  display: block;
+  width: 220px;
+  height: 330px;
+  line-height: 230px;
+  background-image: url("../image/business-card-design.jpg");
+  background-size: cover;
+  border-radius: 50px;
+  color: white;
+  margin: 5% auto 0px;
+}
+
+.process .btn2 {
+  display: block;
+  width: 220px;
+  height: 330px;
+  line-height: 230px;
+  background-image: url("../image/app-design.jpg");
+  background-size: cover;
+  border-radius: 50px;
+  color: white;
+  margin: 5% auto 0px;
+}
+
+.process .btn3 {
+  display: block;
+  width: 220px;
+  height: 330px;
+  line-height: 230px;
+  background-image: url("../image/web-development.jpg");
+  background-size: cover;
+  border-radius: 50px;
+  color: white;
+  margin: 5% auto 0px;
+}
+
+.process .btn4 {
+  display: block;
+  width: 220px;
+  height: 330px;
+  line-height: 230px;
+  background-image: url("../image/branding.jpg");
+  background-size: cover;
+  border-radius: 50px;
+  color: white;
+  margin: 5% auto 0px;
+}
+
+.process .container {
+  padding-top: 8%;
+  padding-bottom: 5%;
+}
+
+.contact-us {
+  padding-bottom: 5%;
+}
+
+.contact-us form {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#contact{
+	background:#333333;
+	color:#f4f4f4;
+	padding-bottom:80px;
+}
+
+textarea.form-control{
+    height:100px;
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+	#menu-icon { display: inline-block; }
+	nav ul, nav:active ul { display: none; position: absolute; padding: 20px; background: rgb(197, 197, 197) none repeat scroll 0% 0%; right: 10px; width: 35%; }
+	nav:hover ul { display: block; }
+	nav li { text-align: center; width: 100%; padding: 15px 0px; margin: 0px; }
+	.content h1 { font-size: 250%; }
+	.btn { font-size: 110%; padding: 7px 15px; }

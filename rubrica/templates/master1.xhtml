@@ -1,0 +1,47 @@
+<html>
+  
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test website</title>
+  
+  
+  
+  <link rel="stylesheet" href="${tg.url('/css/home.css')}"/>
+  <link rel="stylesheet" href="${tg.url('/css/style.css')}"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="${tg.url('/css/bootstrap.min.css')}" />
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <header>
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="home.xhtml">
+          <img src="${tg.url('/img/turbogears_logo.png')}"/>
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="${('', 'active')[self.defined('page') and page=='home']}"><a href="${tg.url('/home')}">HOME</a></li>
+          <li class="${('', 'active')[self.defined('page') and page=='setting']}"><a href="${tg.url('/setting')}">SETTING</a></li>
+          <li class="${('', 'active')[self.defined('page') and page=='nuovo']}"><a href="${tg.url('/new_contact')}">ADD CONTACT</a></li>
+        </ul>
+        <ul py:if="tg.auth_stack_enabled" class="nav navbar-nav navbar-right">
+          <li py:if="not request.identity"><a href="${tg.url('/login')}">Login</a></li>
+          <li py:if="request.identity"><a href="${tg.url('/logout_handler')}">Logout</a></li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+    </header>
+  </html>

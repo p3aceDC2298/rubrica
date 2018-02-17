@@ -1,0 +1,39 @@
+<html py:extends="master1.xhtml" py:strip="True">
+  <head py:block="head" py:strip="True">
+    
+    <link rel="stylesheet" href="${tg.url('/css/style.css')}"/>
+  </head>
+  <body>
+    <div id="right-block" class="col-md-8 col-md-offset-2">
+      <div class="user-settings">
+        <h1>Exdent your adress book</h1>
+        <!-- edit form column -->
+        <div class="col-md-9 personal-info">
+          <h3>ADD NEW CONTACT</h3>
+          <br/>
+          <br/>
+          <form action="add" method="post" class="form-horizontal" role="form" >
+            <div class="form-group">
+              <label for="name" class="col-lg-3 control-label">Name</label>
+              <div class="col-lg-8">
+                <input id="name" name="name" class="form-control" type="text" value="" required="" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="number" class="col-lg-3 control-label">Phone Number</label>
+              <div class="col-lg-8">
+                <input  id="number" name="number" class="form-control" type="text" value="" required="" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label"></label>
+              <div class="col-md-8">
+                <input type="submit" class="btn btn-primary" value="Add new contact"/>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

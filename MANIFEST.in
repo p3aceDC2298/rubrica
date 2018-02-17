@@ -1,0 +1,4 @@
+recursive-include rubrica/public *
+include rubrica/public/favicon.ico
+recursive-include rubrica/i18n *
+recursive-include rubrica/templates *
